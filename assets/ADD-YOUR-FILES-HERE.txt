@@ -1,0 +1,1 @@
+Add our-photo.jpg and our-song.mp3 in this folder.

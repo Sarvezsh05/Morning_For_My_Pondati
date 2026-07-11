@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7c9b1">
+  <meta name="description" content="A private animated morning love experience.">
+  <title>Kalai Vanakkam En Azhagana Manaivi</title>
+  <link rel="stylesheet" href="style.css?v=4">
+  <script src="script.js?v=4" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="sun-halo"></div>
+    <div class="mist mist-one"></div>
+    <div class="mist mist-two"></div>
+    <div class="light-particles" id="lightParticles"></div>
+  </div>
+
+  <section class="opening" id="opening" aria-label="Morning opening">
+    <div class="opening-sun" aria-hidden="true"></div>
+    <div class="opening-rings" aria-hidden="true"></div>
+    <article class="opening-glass">
+      <p class="micro-label">A sunrise made only for you</p>
+      <h1>
+        <span>Kalai Vanakkam</span>
+        <span>En Azhagana Manaivi</span>
+      </h1>
+      <p class="opening-text">Wakey Wakey Pondati, before the world reaches you let my love be the first warmth that touches your morning</p>
+      <button class="primary-button" id="openExperience" type="button">
+        <span>Open Your Morning</span>
+        <span class="button-icon" aria-hidden="true">☀</span>
+      </button>
+    </article>
+  </section>
+
+  <section class="envelope-scene" id="envelopeScene" aria-hidden="true">
+    <div class="envelope-ambient" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <article class="envelope-stage">
+      <p class="micro-label">A little morning letter is waiting for you from your beloved husband Sarvezshvaran</p>
+      <h2>For My Beloved Wife</h2>
+      <p class="envelope-intro">Tap the envelope gently maa</p>
+
+      <button class="envelope-button" id="openEnvelope" type="button" aria-label="Open your morning envelope">
+        <span class="envelope-shadow" aria-hidden="true"></span>
+
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-back"></span>
+
+          <span class="envelope-letter">
+            <span class="letter-small">Good morning, my love</span>
+            <span class="letter-main">A sunrise from my heart</span>
+            <span class="letter-heart">♥</span>
+          </span>
+
+          <span class="envelope-pocket"></span>
+          <span class="envelope-flap"></span>
+
+          <span class="wax-seal">
+            <span>♥</span>
+          </span>
+        </span>
+
+        <span class="envelope-action">Open My Letter</span>
+      </button>
+
+      <p class="envelope-hint">One tap, then let my love unfold</p>
+    </article>
+  </section>
+
+  <div class="sunrise-flash" id="sunriseFlash" aria-hidden="true">
+    <div class="flash-sun"></div>
+  </div>
+
+  <main class="experience" id="experience" aria-hidden="true">
+    <header class="floating-header glass-panel">
+      <div class="header-copy">
+        <strong>Good Morning, My Beautiful Wife</strong>
+        <span>My first thought, My forever person</span>
+      </div>
+      <button class="round-button" id="musicButton" type="button" aria-label="Play our song">
+        <span id="musicIcon" aria-hidden="true">♪</span>
+        <span class="music-rings" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <section class="hero-card glass-panel">
+      <div class="hero-media">
+        <img id="heroPhoto" src="assets/our-photo.jpg?v=3" alt="A beautiful memory of us" fetchpriority="high" decoding="async">
+        <div class="photo-fallback" id="photoFallback" aria-hidden="true">
+          <div class="fallback-sun"></div>
+          <p>Our special photo will appear here</p>
+        </div>
+        <div class="photo-wash"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="micro-label">Your morning begins here</p>
+        <h2><span>Wakey Wakey,</span><span>my beautiful </span><span>wifeyy</span></h2>
+        <p>If I cannot be beside you this morning becuase of our distance dont worry darling, let this sunrise carry my hug, my kiss, and my whole heart straight to you, maa</p>
+        <button class="soft-button" id="letterButton" type="button">Read My Morning Letter For You Wifey</button>
+      </div>
+    </section>
+
+    <section class="message-grid">
+      <article class="glass-panel message-card quote-card">
+        <p class="micro-label">From my heart</p>
+        <blockquote>“Every sunrise feels more beautiful because my heart wakes up loving you”</blockquote>
+      </article>
+
+      <article class="glass-panel message-card promise-card">
+        <button class="heart-button" id="heartButton" type="button" aria-label="Send hearts">♥</button>
+        <div>
+          <p class="micro-label">My promise</p>
+          <h3>I will never leave you maa</h3>
+          <p>I will always be with you in your heart, in your mind, and in every quiet moment when you miss me</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="kiss-section glass-panel">
+      <div>
+        <p class="micro-label">One touch from me to you</p>
+        <h3>Ready for your morning kisses baby maa?</h3>
+        <p id="kissMessage">Tap once and watch my kisses fly across your whole screen</p>
+      </div>
+      <button class="kiss-button" id="kissButton" type="button">
+        <span>Send Flying Kisses</span>
+        <span aria-hidden="true">💋</span>
+      </button>
+    </section>
+
+    <p class="footer-copy">Made with all my love, only for my pasamana manaivi</p>
+  </main>
+
+  <section class="letter-modal" id="letterModal" aria-hidden="true">
+    <div class="letter-backdrop" data-close-letter></div>
+    <article class="letter-sheet" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button class="modal-close" id="closeLetter" type="button" aria-label="Close letter">×</button>
+      <p class="micro-label">My morning promise</p>
+      <h2 id="letterTitle">En Pasamana Manaivi,</h2>
+      <div class="letter-copy">
+        <p>
+  I want you to remember this always maa, I will never leave you maa. No matter how far we are or how difficult some days may become, I will always stay with you in your heart, in your mind, and beside your soul. You will never have to face anything alone because my love will always be there holding your hand.
+</p>
+
+<p>
+  I love you so much maa, more than I can ever explain properly through words. You are not only my wife you are my happiness, my peace, my comfort, my safe place, and the person my heart wants in every tomorrow. Loving you is the most beautiful part of my life, and I will always choose you again and again.
+</p>
+
+<p>
+  I miss you terribly maa, more than anything. I miss your voice, your smile, your little expressions, your hugs, and simply having you close to me. Sometimes the distance hurts so much because all I want is to be beside you, look into your eyes, hold you tightly, and never let you go.
+</p>
+
+<p>
+  So this morning, close your eyes for one small moment maa and imagine me standing beside you, kissing your forehead, hugging you gently, and telling you, “I am here with you, my pondati.” Until the day I can wake up beside you for real, carry my love with you everywhere you go because my heart is always right there with you maa.
+</p>
+
+<p>
+  Start your morning with a beautiful smile for me maa. I love you so much, I miss you terribly, and no distance in this world can ever change the place you have inside my heart. You are mine, I am yours, and I will always be with you today, tomorrow, and forever maa.
+</p>
+      </div>
+      <p class="signature">I love you so much maa<br>Always yours, today, tomorrow, and forever. ☀♥</p>
+    </article>
+  </section>
+
+  <div class="kiss-layer" id="kissLayer" aria-hidden="true"></div>
+  <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
+
+  <audio id="loveSong" preload="auto">
+    <source src="assets/our-song.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
